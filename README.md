@@ -492,6 +492,9 @@ class Resupply{
 </form>
 
 ```
+
+![](docs/resupplyStock.png)
+
 - create a app/code/BDC/Minventory/Block/Adminhtml/Product/Edit/Button/Back.php
 ```    
 <?php
