@@ -55,6 +55,7 @@ php bin/magento setup:di:compile
 ![](docs/menuDash.png)
 ![](docs/minventoryList.png)
 ![](docs/resupplyStock.png)
+![](docs/resupplyaddAfter.png)
 
 
 ### ref
