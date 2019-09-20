@@ -4,8 +4,7 @@ namespace BDC\Minventory\Block\Adminhtml\Product\Edit\Button;
 
 class Save extends \Magento\Backend\Block\Template implements \Magento\Framework\View\Element\UiComponent\Control\ButtonProviderInterface
 {
-    public function getButtonData()
-    {
+    public function getButtonData() {
         return [
             'label' => __('Save'),
             'class' => 'save primary',

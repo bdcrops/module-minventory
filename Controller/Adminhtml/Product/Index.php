@@ -3,14 +3,10 @@ namespace BDC\Minventory\Controller\Adminhtml\Product;
 
 use \Magento\Framework\Controller\ResultFactory;
 
-class Index extends \BDC\Minventory\Controller\Adminhtml\Product
-{
-    public function execute()
-    {
+class Index extends \BDC\Minventory\Controller\Adminhtml\Product{
+    public function execute(){
         $resultPage = $this->resultFactory->create(ResultFactory::TYPE_PAGE);
-
         $resultPage->getConfig()->getTitle()->prepend((__('Micro Inventory')));
-
         return $resultPage;
     }
 }

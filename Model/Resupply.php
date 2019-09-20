@@ -2,8 +2,7 @@
 
 namespace BDC\Minventory\Model;
 
-class Resupply
-{
+class Resupply{
     protected $productRepository;
     protected $collectionFactory;
     protected $stockRegistry;
@@ -12,15 +11,13 @@ class Resupply
         \Magento\Catalog\Api\ProductRepositoryInterface $productRepository,
         \Magento\Catalog\Model\ResourceModel\Product\CollectionFactory $collectionFactory,
         \Magento\CatalogInventory\Api\StockRegistryInterface $stockRegistry
-    )
-    {
+    ) {
         $this->productRepository = $productRepository;
         $this->collectionFactory = $collectionFactory;
         $this->stockRegistry = $stockRegistry;
     }
 
-    public function resupply($productId, $qty)
-    {
+    public function resupply($productId, $qty) {
         $product = $this->productRepository->getById($productId);
         $stockItem = $this->stockRegistry->getStockItemBySku($product->getSku());
         $stockItem->setQty($stockItem->getQty() + $qty);

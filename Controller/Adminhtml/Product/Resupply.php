@@ -4,8 +4,7 @@ namespace BDC\Minventory\Controller\Adminhtml\Product;
 
 use \Magento\Framework\Controller\ResultFactory;
 
-class Resupply extends \BDC\Minventory\Controller\Adminhtml\Product
-{
+class Resupply extends \BDC\Minventory\Controller\Adminhtml\Product{
     protected $stockRegistry;
     protected $productRepository;
     protected $resupply;
@@ -15,16 +14,14 @@ class Resupply extends \BDC\Minventory\Controller\Adminhtml\Product
         \Magento\Catalog\Api\ProductRepositoryInterface $productRepository,
         \Magento\CatalogInventory\Api\StockRegistryInterface $stockRegistry,
         \BDC\Minventory\Model\Resupply $resupply
-    )
-    {
+    ) {
         parent::__construct($context);
         $this->productRepository = $productRepository;
         $this->stockRegistry = $stockRegistry;
         $this->resupply = $resupply;
     }
 
-    public function execute()
-    {
+    public function execute() {
         if ($this->getRequest()->isPost()) {
             $this->resupply->resupply(
                 $this->getRequest()->getParam('id'),

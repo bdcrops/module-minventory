@@ -4,8 +4,7 @@ namespace BDC\Minventory\Block\Adminhtml\Product\Edit\Button;
 
 class Back extends \Magento\Backend\Block\Template implements \Magento\Framework\View\Element\UiComponent\Control\ButtonProviderInterface
 {
-    public function getButtonData()
-    {
+    public function getButtonData() {
         return [
             'label' => __('Back'),
             'on_click' => sprintf("location.href = '%s';", $this->getBackUrl()),
@@ -14,8 +13,7 @@ class Back extends \Magento\Backend\Block\Template implements \Magento\Framework
         ];
     }
 
-    public function getBackUrl()
-    {
+    public function getBackUrl() {
         return $this->getUrl('*/*/');
     }
 }
