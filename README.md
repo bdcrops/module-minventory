@@ -51,11 +51,32 @@ php bin/magento setup:di:compile
 
 ```
 ## Tutorial
+- create app/code/BDC/Minventory/registration.php
+- create app/code/BDC/Minventory/etc/module.xml
+- create app/code/BDC/Minventory/etc/adminhtml/routes.xml
+- create app/code/BDC/Minventory/Controller/Adminhtml/Product.php
+- create app/code/BDC/Minventory/Controller/Adminhtml/Product/Index.php
+- create app/code/BDC/Minventory/Controller/Adminhtml/Product/MassResupply.php
+- create app/code/BDC/Minventory/Controller/Adminhtml/Product/Resupply.php
+- create app/code/BDC/Minventory/Model/Resupply.php
+- create app/code/BDC/Minventory/etc/adminhtml/menu.xml
+- create app/code/BDC/Minventory/etc/acl.xml
+- create app/code/BDC/Minventory/Block/Adminhtml/Product/Edit/Button/Back.php
+- create app/code/BDC/Minventory/Block/Adminhtml/Product/Edit/Button/Save.php
+- create app/code/BDC/Minventory/Ui/Component/Listing/Columns/Resupply.php
+- create app/code/BDC/Minventory/Ui/DataProvider/Product/Form/ProductDataProvider.php
+- create app/code/BDC/Minventory/Ui/DataProvider/Product/ProductDataProvider.php
+- create app/code/BDC/Minventory/view/adminhtml/layout/minventory_product_index.xml
+- create app/code/BDC/Minventory/view/adminhtml/layout/minventory_product_resupply.xml
+- create app/code/BDC/Minventory/view/adminhtml/ui_component/minventory_listing.xml
+- create app/code/BDC/Minventory/view/adminhtml/ui_component/minventory_resupply_form.xml
 
+-
 ![](docs/menuDash.png)
 ![](docs/minventoryList.png)
 ![](docs/resupplyStock.png)
 ![](docs/resupplyaddAfter.png)
+![](docs/massResuply.png)
 
 
-### ref
+### Ref
