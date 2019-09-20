@@ -421,6 +421,8 @@ class Resupply{
 </listing>
 
 ```
+![](docs/UiComponent.png)
+
 - create a app/code/BDC/Minventory/view/adminhtml/ui_component/minventory_resupply_form.xml
 
 ```    
