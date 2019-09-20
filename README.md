@@ -3,7 +3,7 @@
 # BDC_Minventory
 
 This module is used as a resupply for stock BDCrops Magento 2 extensions.
-The sample module, demonstrating UI grid.
+Magento 2 Stock / Inventory Management, demonstrating UI grid.
 
 
 
@@ -31,7 +31,7 @@ We recommend you to install BDC_Minventory module via composer. It is easy to in
 composer config repositories.module-minventory git
 https://github.com/bdcrops/module-minventory.git
 
-composer require bdcrops/module-minventory:~1.0.0
+composer require bdc/module-minventory:~1.0.0
 php bin/magento setup:upgrade
 php bin/magento setup:static-content:deploy
 ```
